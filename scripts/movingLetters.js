@@ -1,4 +1,6 @@
-// Wrap every letter in a span
+'use strict';
+
+// Add description here
 const textWrapper = document.querySelector('.moving .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 

@@ -21,6 +21,16 @@
   
   <body>
 
+    <!-- Light or Dark Mode -->
+    <section class="section browsermode"> 
+      <div class="container">
+        <div class="buttons has-addons is-centered">
+          <button class="button is-active mode" id="modeButtonLight">Light Mode</button>
+          <button class="button mode" id="modeButtonDark">Dark Mode</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Hero -->
     <section class="hero is-info is-large">
       <div class="hero-head">
@@ -63,10 +73,7 @@
           <div class="container">
             <ul>
               <li class="is-active">
-                <a>Home</a>
-              </li>
-              <li>
-                <a href="html/about.html">About</a>
+                <a>About</a>
               </li>
               <li>
                 <a>Portfolio</a>
@@ -100,27 +107,33 @@
     </section>
 
     <!-- Main Content -->
-    <section>
+    <section class="section">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
           <div class="tile">
             <div class="tile is-parent is-vertical">
               <article class="tile is-child box">
-                <!-- Put any content you want -->
+
               </article>
-              <article class="tile is-child box">
-                <!-- Put any content you want -->
-              </article>
+              <!-- <article class="tile is-child box">
+
+              </article> -->
             </div>
-            <div class="tile is-parent">
+            <!-- <div class="tile is-parent">
               <article class="tile is-child box">
-                <!-- Put any content you want -->
+                
               </article>
-            </div>
+            </div> -->
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box">
+            <h1 class="title align-center">
+              Developer Skills
+            </h1>
+            <h2 class="subtitle align-center">
+              Launguages and Frameworks
+            </h2>
               <div class="columns is-mobile align-center">
                 <div class="column">
                   <div class="inner">
@@ -128,19 +141,92 @@
                     <h3>JavaScript</h3>
                   </div>
                 </div>
-                <div class="column">2</div>
-                <div class="column">3</div>
-                <div class="column">4</div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-html5"></span>
+                    <h3>HTML</h3>
+								  </div>
+                </div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-css3-alt"></span>
+                    <h3>CSS</h3>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-python"></span>
+                    <h3>Python</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-mobile align-center">
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-react"></span>
+                    <h3>React</h3>
+								  </div>
+                </div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-git-alt"></span>
+                    <h3>Git</h3>
+								  </div>
+                </div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-github"></span>
+                    <h3>GitHub</h3>
+								  </div>
+                </div>
+                <div class="column">
+                  <div class="inner">
+                    <span style="font-size: 3rem;" class="fab style2 major fa-node-js"></span>
+                    <h3>Node</h3>
+							  	</div>
+                </div>
               </div>
             </article>
           </div>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child box">
-
+            <div class="buttons is-centered">
+              <button class="button">Download Resume</button>
+            </div>
           </article>
         </div>
       </div>
+      </div>
+    </section>
+
+    <!-- Teams Are Awesome -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title">
+              "
+            </h1>
+            <h2 class="subtitle">
+              I had the pleasure of working with Harmony at DigitalCrafts, where she quickly established herself as an easygoing colleague and a positive contributor to the team. Harmony quickly took the reigns on a new project of ours and ran with it with impressive self-direction and organization. I’d highly recommend Harmony for any role she pursues and will happy discuss further should any employers request. 
+            </h2>
+            <h1 class="title is-pulled-right">
+              "
+            </h1>
+            <p class="">
+              <strong>Max McChesney</strong>
+            </p>
+            <p class="">
+              CEO + Co-Founder @ <a href="https://www.digitalcrafts.com/" rel="noreferrer">DigitalCrafts</a>
+            </p>
+          </div>
+          <div class="column">
+            <a>
+              <img src="images/Teamwork_Image.png" alt="Logo">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -154,7 +240,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/movingLetters.js"></script>
+    <script src="scripts/index.js"></script>
 
   </body>
 </html>
