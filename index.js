@@ -3,7 +3,7 @@
 const http = require('http');
 
 const hostname = '127.0.0.1';
-const port = 3333;
+const port = 3334;
 
 const express = require('express');
 const es6Renderer = require('express-es6-template-engine');
