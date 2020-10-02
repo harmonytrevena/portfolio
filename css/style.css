@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero.is-large .hero-body {
-    padding: 1rem 1.5rem;
+    padding: 0px;
 }
 
 .subtitle {
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero.is-info {
-  background-color: #fefbf5;
+  background-color: #eecec4;
   color: #98bec8;
 }
 
@@ -131,9 +131,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.title strong {
+  color: #223f97;
+}
+
 @media screen and (max-width: 1023px) {
   .hero.is-info .navbar-menu {
-    background-color: #fefbf5;
+    background-color: #eecec4;
   }
 }
 
@@ -157,14 +161,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero.is-info .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover {
-  background-color: #98bec8;
+  background-color: #F8A794;
   color: #ffffff;
 }
 
 .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #98bec8;
+  color: #223f97;
 }
 
 .footer {
@@ -173,9 +177,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .hero.is-info .navbar-link:hover, .hero.is-info .navbar-link.is-active {
-  background-color: #98bec8;
-  border-radius: 0px 0px 4px 4px;
-  color: #ffffff;
+  background-color: #eecec4;
+  /* border-radius: 0px 0px 4px 4px;
+  color: #ffffff; */
 }
 
 .navbar-burger:hover {
@@ -184,10 +188,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-.browsermode {
+/* .browsermode {
   background-color: #98bec8;
   padding: .5rem 1rem;
-}
+} */
 
 .button.mode:active, .button.mode.is-active {
   background-color: #fefbf5;
@@ -199,4 +203,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #98bec8;
   border-color: #fefbf5;
   color: #000000;
+}
+
+.button.is-link {
+  background-color: #223f97;
+  border-color: transparent;
+  color: #fff;
 }

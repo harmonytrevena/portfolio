@@ -4,212 +4,395 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio: I'm Harmony!</title>
-
-    <script src="https://kit.fontawesome.com/afcc5fe880.js" crossorigin="anonymous"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma-switch@2.0.0/dist/css/bulma-switch.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
   
   </head>
   
   <body>
 
-    <section class="section browsermode"> 
+    <!-- <section class="section browsermode"> 
       <div class="container">
         <div class="buttons has-addons is-centered">
           <button class="button is-active mode" id="modeButtonLight">Light Mode</button>
           <button class="button mode" id="modeButtonDark">Dark Mode</button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="hero is-info is-large">
       <div class="hero-head">
-        <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-                <img src="images/Portfolio_Logo.png" alt="Logo">
+                <img src="images/Blue_Portfolio_Logo.png" alt="Logo">
               </a>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroB" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  Home
-                </a>
-                <a class="navbar-item">
-                  Portfolio
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-              </div>
             </div>
           </div>
-        </nav>
       </div>
 
       <div class="hero-body">
-        <img src="images/Portfolio_Hero_Image.png" alt="Profile picture of Harmony">
+        <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items">
+      </div>
+
+      <!-- Move to right side -->
+      <div class="container">
+        <div class="field is-right">
+          <label for="switchRoundedDefault">Dark</label>
+          <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
+          <label for="switchRoundedDefault">Light</label>
+        </div>
       </div>
       
       <div class="hero-foot">
         <nav class="tabs is-boxed is-fullwidth">
           <div class="container">
             <ul>
-              <li class="is-active">
-                <a>About</a>
-              </li>
-              <li>
-                <a>Portfolio</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
+              <li class="tab is-active" onclick="openTab(event,'About')"><a>About</a></li>
+              <li class="tab" onclick="openTab(event,'Portfolio')"><a>Portfolio</a></li>
+              <li class="tab" onclick="openTab(event,'Contact')"><a>Contact</a></li>
             </ul>
           </div>
-        </nav>
-      </div>
+         </nav>
+       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h1 class="moving">
-          <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters">Coder</span>
-          </span>
-        </h1>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <h2 class="subtitle">
-          I am a Project Manager and Designer turned <strong>Software Developer</strong>, passionate about working in teams, design and creative problem solving.
-        </h2>
-        <h2 class="subtitle">
-          My drive is fueled by passion and its ability to shape our world, our lives and our interactions. I am most satisfied when I can connect with people that are passionate about who they are, what they do and why they do it. This has resulted in a journey that has connected me with individuals from across the world that work in a variety of careers, different levels of expertise and unique points of view. 
-        </h2>
-      </div>
-    </section>
-
-    <section class="section">
-    <div class="container">
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child box">
-
-              </article>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-            <h1 class="title align-center">
-              Developer Skills
-            </h1>
-            <h2 class="subtitle align-center">
-              Launguages and Frameworks
+      <!-- About Tab Page -->
+      <div class="container section">
+        <div id="About" class="content-tab">
+          <div class="container">
+            <!-- <h1 class="moving">
+              <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">Coder</span>
+              </span>
+            </h1> -->
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+            <h2 class="title">
+              Project Manager and Designer turned <strong>Software Developer</strong>, passionate about working in teams, good design and creative problem solving.
             </h2>
-              <div class="columns is-mobile align-center">
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-js-square"></span>
-                    <h3>JavaScript</h3>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-html5"></span>
-                    <h3>HTML</h3>
-								  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-css3-alt"></span>
-                    <h3>CSS</h3>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-python"></span>
-                    <h3>Python</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="columns is-mobile align-center">
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-react"></span>
-                    <h3>React</h3>
-								  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-git-alt"></span>
-                    <h3>Git</h3>
-								  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-github"></span>
-                    <h3>GitHub</h3>
-								  </div>
-                </div>
-                <div class="column">
-                  <div class="inner">
-                    <span style="font-size: 3rem;" class="fab style2 major fa-node-js"></span>
-                    <h3>Node</h3>
-							  	</div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <div class="buttons is-centered">
-              <button class="button">Download Resume</button>
-            </div>
-          </article>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <h1 class="title">
-              "
-            </h1>
+            <br>
             <h2 class="subtitle">
-              I had the pleasure of working with Harmony at DigitalCrafts, where she quickly established herself as an easygoing colleague and a positive contributor to the team. Harmony quickly took the reigns on a new project of ours and ran with it with impressive self-direction and organization. I’d highly recommend Harmony for any role she pursues and will happy discuss further should any employers request. 
+              My drive is fueled by passion and its ability to shape our world, our lives and our interactions. I am most satisfied when I can connect with people that are passionate about who they are, what they do and why they do it. This has resulted in a journey that has connected me with individuals from across the world that work in a variety of careers, different levels of expertise and unique points of view. 
             </h2>
-            <h1 class="title is-pulled-right">
-              "
-            </h1>
-            <p class="">
-              <strong>Max McChesney</strong>
-            </p>
-            <p class="">
-              CEO + Co-Founder @ <a href="https://www.digitalcrafts.com/" rel="noreferrer">DigitalCrafts</a>
-            </p>
+            <div class="field has-text-centered">
+              <button class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span><a href="https://www.linkedin.com/in/harmony-trevena/"></a>LinkedIn</span>
+              </button>
+              <button class="button">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span <a href="https://github.com/harmonytrevena"></a>GitHub</span>
+              </button>
+            </div>
+            <br>
           </div>
-          <div class="column">
-            <a>
-              <img src="images/Teamwork_Image.png" alt="Logo">
-            </a>
+
+          <div class="container">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child box">
+                      <!-- Developer Skills -->
+                      <h1 class="title align-center">
+                        Developer Skills
+                      </h1>
+                      <h2 class="subtitle align-center">
+                        Launguages and Frameworks
+                      </h2>
+                        <div class="columns is-mobile align-center">
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-js-square"></span>
+                              <h3>JavaScript</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-html5"></span>
+                              <h3>HTML</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-css3-alt"></span>
+                              <h3>CSS</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-python"></span>
+                              <h3>Python</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns is-mobile align-center">
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-react"></span>
+                              <h3>React</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-git-alt"></span>
+                              <h3>Git</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-github"></span>
+                              <h3>GitHub</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-node-js"></span>
+                              <h3>Node</h3>
+                            </div>
+                          </div>
+                        </div>
+                    </article>
+                  </div>
+                </div>
+                <!-- UI | UX Skills -->
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                  <h1 class="title align-center">
+                    Design Skills
+                  </h1>
+                  <h2 class="subtitle align-center">
+                    Tools and Frameworks
+                  </h2>
+                    <div class="columns is-mobile align-center">
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="style2 fab fa-adobe"></span>
+                          <h3>Adobe</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/Canva.png" alt="Canva Logo">
+                          </div>
+                          <h3>Canva</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-bootstrap"></span>
+                          <h3>Bootstrap</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/Bulma.png" alt="Bulma Logo">
+                          </div>
+                          <h3>Bulma</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <h1 class="title">
+                    Experience
+                  </h1>
+                  <h2 class="subtitle">
+                    Development + Design + Project Management
+                  </h2>
+                  <h3><strong>Capstone . Project Manager . Remote</strong></h3>
+                  <h3>Describe project and role here.</h3>
+                  <br>
+                  <h3><strong>Taskwork . PM + Front-end Developer . Remote</strong></h3>
+                  <h3>Describe project and role here.</h3>
+                  <br>
+                  <h3><strong>To-Do Today . UI/UX Designer . Remote</strong></h3>
+                  <h3>To-Do Today provides information about local events in select cities that are happening Today! Users can browse information about weather, concerts, festivals, sporting events, breweries and more.
+                  </h3>
+                  <br>
+                  <div class="field has-text-centered">
+                    <button class="button is-link">
+                      <span><a href="#"></a>View Resume</span>
+                    </button>
+                    <button class="button">
+                      <span><a href="#"></a>Download</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">
+                  "
+                </h1>
+                <h2 class="subtitle">
+                  I had the pleasure of working with Harmony at DigitalCrafts, where she quickly established herself as an easygoing colleague and a positive contributor to the team. Harmony quickly took the reigns on a new project of ours and ran with it with impressive self-direction and organization. I’d highly recommend Harmony for any role she pursues and will happy discuss further should any employers request. 
+                </h2>
+                <h1 class="title is-pulled-right">
+                  "
+                </h1>
+                <p class="">
+                  <strong>Max McChesney</strong>
+                </p>
+                <p class="">
+                  CEO + Co-Founder @ <a href="https://www.digitalcrafts.com/" rel="noreferrer">DigitalCrafts</a>
+                </p>
+              </div>
+              <div class="column">
+                <a>
+                  <img src="images/Teamwork_Image.png" alt="Logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Tab Page -->
+        <div id="Portfolio" class="content-tab" style="display:none">
+          <div class="container">
+            <h1 class="moving">
+              <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">Coder</span>
+              </span>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <h2 class="subtitle">
+              TEST <strong>Software Developer</strong>, passionate about working in teams, design and creative problem solving.
+            </h2>
+            <h2 class="subtitle">
+              My drive is fueled by passion and its ability to shape our world, our lives and our interactions. I am most satisfied when I can connect with people that are passionate about who they are, what they do and why they do it. This has resulted in a journey that has connected me with individuals from across the world that work in a variety of careers, different levels of expertise and unique points of view. 
+            </h2>
+          </div>
+
+          <div class="container">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child box">
+      
+                    </article>
+                  </div>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                  <h1 class="title align-center">
+                    Developer Skills
+                  </h1>
+                  <h2 class="subtitle align-center">
+                    Launguages and Frameworks
+                  </h2>
+                    <div class="columns is-mobile align-center">
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-js-square"></span>
+                          <h3>JavaScript</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-html5"></span>
+                          <h3>HTML</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-css3-alt"></span>
+                          <h3>CSS</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-python"></span>
+                          <h3>Python</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns is-mobile align-center">
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-react"></span>
+                          <h3>React</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-git-alt"></span>
+                          <h3>Git</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-github"></span>
+                          <h3>GitHub</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <span style="font-size: 3rem;" class="fab style2 major fa-node-js"></span>
+                          <h3>Node</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <div class="buttons is-centered">
+                    <button class="button">Download Resume</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">
+                  "
+                </h1>
+                <h2 class="subtitle">
+                  I had the pleasure of working with Harmony at DigitalCrafts, where she quickly established herself as an easygoing colleague and a positive contributor to the team. Harmony quickly took the reigns on a new project of ours and ran with it with impressive self-direction and organization. I’d highly recommend Harmony for any role she pursues and will happy discuss further should any employers request. 
+                </h2>
+                <h1 class="title is-pulled-right">
+                  "
+                </h1>
+                <p class="">
+                  <strong>Max McChesney</strong>
+                </p>
+                <p class="">
+                  CEO + Co-Founder @ <a href="https://www.digitalcrafts.com/" rel="noreferrer">DigitalCrafts</a>
+                </p>
+              </div>
+              <div class="column">
+                <a>
+                  <img src="images/Teamwork_Image.png" alt="Logo">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    
 
     <footer class="footer">
       <div class="content has-text-centered">
@@ -218,9 +401,11 @@
         </p>
       </div>
     </footer>
-
+    
+    <!-- Portfolio Tab Page -->
     <script src="scripts/movingLetters.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/tabToggle.js"></script>
+    <script src="https://kit.fontawesome.com/38a39c8573.js" crossorigin="anonymous"></script>
 
   </body>
 </html>
