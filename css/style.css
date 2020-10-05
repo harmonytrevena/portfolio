@@ -295,12 +295,12 @@ nav {
   padding: 0.75rem;
 }
 
-@media(max-width: 1024px) {
+/* @media(max-width: 1024px) {
   .reverse-row-order {
       flex-direction: column-reverse;
       display: flex;
   }
-}
+} */
 
 .social-link {
   padding: 15px;
