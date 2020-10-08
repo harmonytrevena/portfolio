@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="/image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="/image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="/image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="/image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
   
   </head>
@@ -66,14 +66,14 @@
         <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items">
       </div>
 
-      <!-- Move to right side -->
-      <div class="container">
+      <!-- Dark Light Mode Feature (not built) -->
+      <!-- <div class="container">
         <div class="field padding-add">
           <label for="switchRoundedDefault">Dark</label>
           <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
           <label for="switchRoundedDefault">Light</label>
         </div>
-      </div>
+      </div> -->
       
       <!-- Hero Footer -->
       <div class="hero-foot">
@@ -81,7 +81,7 @@
           <div class="container">
             <ul>
               <li class="tab is-active" onclick="openTab(event,'About')"><a>About</a></li>
-              <li class="tab" onclick="openTab(event,'Portfolio')"><a>Portfolio</a></li>
+              <li class="tab" onclick="openTab(event,'Projects')"><a>Projects</a></li>
               <li class="tab" onclick="openTab(event,'Contact')"><a>Contact</a></li>
             </ul>
           </div>
@@ -183,10 +183,45 @@
                         </div>
                       </div>
                     </div>
+                    <div class="columns is-mobile align-center">
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/Postgres.png" alt="Postgres Logo">
+                          </div>
+                          <h3>Postgres</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/Redux.png" alt="Redux Logo">
+                          </div>
+                          <h3>Redux</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/Postico.png" alt="Postico Logo">
+                          </div>
+                          <h3>Postico</h3>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="inner">
+                          <div style="max-height: 49px;">
+                            <img src="images/AWS.png" alt="AWS Logo">
+                          </div>
+                          <h3>AWS</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="is-size-7 has-text-centered">See what I am currently learning on <a href="#">GitHub</a></p>
                   </div>
                 </div>
                 <div class="column">
-                    <div class="box">
+                    <div class="box" style="padding-bottom: calc(30px + 7px);">
                       <!-- Designer Skills -->
                       <h1 class="title align-center" style="margin-bottom: 1.5rem;">
                         Design Skills
@@ -197,7 +232,9 @@
                         <div class="columns is-mobile align-center">
                           <div class="column">
                             <div class="inner">
-                              <span style="font-size: 3rem;" class="style2 fab fa-adobe"></span>
+                              <div style="max-height: 49px;">
+                                <img src="images/Adobe.png" alt="Adobe Logo">
+                              </div>
                               <h3>Adobe</h3>
                             </div>
                           </div>
@@ -224,33 +261,42 @@
                             </div>
                           </div>
                         </div>
+                      </div>
+                      <div class="box" style="padding-bottom: calc(30px + 7px);">
+                        <!-- Project Management Skills -->
+                        <h1 class="title align-center" style="margin-bottom: 1.5rem;">
+                          Project + Product Management
+                        </h1>
+                        <h2 class="subtitle align-center">
+                          Tools Used
+                        </h2>
                         <div class="columns is-mobile align-center">
                           <div class="column">
                             <div class="inner">
-                              <span style="font-size: 3rem;" class="style2 fab fa-adobe"></span>
-                              <h3>Adobe</h3>
+                              <span style="font-size: 3rem;" class="fab style2 major fab fa-trello"></span>
+                              <h3>Trello</h3>
+                            </div>
+                          </div>
+                          <div class="column">
+                            <div class="inner">
+                              <span style="font-size: 3rem;" class="fab style2 major fa-github"></span>
+                              <h3>Project</h3>
                             </div>
                           </div>
                           <div class="column">
                             <div class="inner">
                               <div style="max-height: 49px;">
-                                <img src="images/Canva.png" alt="Canva Logo">
+                                <img src="images/Basecamp.png" alt="Basecamp Logo">
                               </div>
-                              <h3>Canva</h3>
-                            </div>
-                          </div>
-                          <div class="column">
-                            <div class="inner">
-                              <span style="font-size: 3rem;" class="fab style2 major fa-bootstrap"></span>
-                              <h3>Bootstrap</h3>
+                              <h3>Basecamp</h3>
                             </div>
                           </div>
                           <div class="column">
                             <div class="inner">
                               <div style="max-height: 49px;">
-                                <img src="images/Bulma.png" alt="Bulma Logo">
+                                <img src="images/Asana.png" alt="Asana Logo">
                               </div>
-                              <h3>Bulma</h3>
+                              <h3>Asana</h3>
                             </div>
                           </div>
                         </div>
@@ -259,9 +305,9 @@
             </div>
           </div>
           <br>
+
           <!-- Experience -->
           <div class="container">
-            <!-- <div class="columns reverse-row-order"> -->
             <div class="columns">
               <div class="column">
                   <img class="contact-img" src="images/Experience_Graphic_Light.png" alt="Desktop, Mouse and Office Space Graphic"/>
@@ -290,14 +336,14 @@
                 <br>
                 <div class="buttons rec is-grouped is-centered">
                   <div class="control">
-                    <button class="button is-link">
-                      <span><a href="#"></a>View Resume</span>
+                    <button class="button is-link" onclick="window.location.href='resume/Harmony_Trevena_Resume.pdf';" target="_blank" rel="noopener noreferrer">
+                      <span>View Resume</span>
                     </button>
                   </div>
                   <div class="control">
-                    <button class="button is-link is-light">
-                      <span <a href="#"></a>Download</span>
-                    </button>
+                    <div class="button is-link is-light">
+                      <a href="resume/Harmony_Trevena_Resume.pdf" download="Harmony_Trevena_Resume" target="_blank">Download</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -381,7 +427,9 @@
             <br>
             <div class="columns">
               <div class="column">
-                  <img class="contact-img" src="images/Experience_Graphic_Light.png" alt="Desktop, Mouse and Office Space Graphic"/>
+                <video playsinline autoplay muted loop>
+                  <source src="video/Featured_Project_Graphic.mp4" type="video/mp4">
+                </video>
               </div>
               <div class="column">
                 <h2 class="title">
@@ -419,7 +467,7 @@
         </div>
 
         <!-- Portfolio Tab Page -->
-        <div id="Portfolio" class="content-tab" style="display:none">
+        <div id="Projects" class="content-tab" style="display:none">
           
           <!-- Taskwork -->
           <div class="container">
@@ -503,14 +551,14 @@
                     Project <strong>Features!</strong>
                   </h2>
                   <h2 class="subtitle">
-                    <strong>Player Animation</strong>
+                    <strong>User Login and Form Validation</strong>
                     <br>
-                    Utilizing Pygame's built in event.get() method and multiple PNGs allows the user to move around the screen.
+                    The app allows users to create an account or sign in as guest, both methods utilize bcrypt to encrypted passwords. Form validation looks for the @ and .com in the email address field at time of login.
                   </h2>
                   <h2 class="subtitle">
-                    <strong>Multiple Levels and a Hidden Final Challenge</strong>
+                    <strong>Create Projects and Tasks</strong>
                     <br>
-                    Playing as Sean, gamers will tackle 4 levels. Answering specific coding questions and keeping track of a randomized secret code, needed to proceed from level to level. The final level shows up once all the puzzles have been solved.
+                    Users have access to their unique projects and tasks, they can progress them through different stages of completion using arrows to move and delete those no longer needed.  
                   </h2>
                 </div>
                 <div class="column">
@@ -520,6 +568,7 @@
             </div>
           </div>
           <br>
+
           <!-- Contribution -->
           <div class="container">
             <br>
@@ -541,6 +590,7 @@
             </div>
           </div>
           <br>
+
           <!-- To-Do Today -->
           <div class="container">
             <h2 class="title">
@@ -645,6 +695,7 @@
             </div>
           </div>
           <br>
+
           <!-- Contribution -->
           <div class="container">
             <br>
@@ -666,6 +717,7 @@
             </div>
           </div>
           <br>
+
           <!-- Sean vs AI -->
           <div class="container">
             <h2 class="title">
@@ -676,7 +728,7 @@
             </h2>
             <div class="buttons is-grouped is-centered">
               <div class="control">
-                <button class="button is-link" onclick="window.location.href='https://www.youtube.com/watch?v=uDevigKLtB0&feature=youtu.be';">
+                <button class="button is-link" onclick="window.location.href='https://www.youtube.com/watch?v=7apJJ6c_RQk&feature=youtu.be';">
                   <span>View Demo</span>
                 </button>
               </div>
@@ -765,6 +817,7 @@
             </div>
           </div>
           <br>
+
           <!-- Contribution -->
           <div class="container">
             <br>
