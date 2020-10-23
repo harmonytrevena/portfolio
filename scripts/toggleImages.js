@@ -35,6 +35,29 @@ function toggleImages() {
     }
 
     // Portfolio Page Images
+    const featureImg2 = document.getElementById('featureImage2');
+    if (featureImg2.src.match("./images/Featured_Project_Graphic.png")) {
+        featureImg2.src = "./images/Dark_Featured_Project_Graphic.png";
+    }
+    else {
+        featureImg2.src = "./images/Featured_Project_Graphic.png";
+    }
+
+    const todoImg = document.getElementById('todoImg');
+    if (todoImg.src.match("./images/ToDo_Today.png")) {
+        todoImg.src = "./images/Dark_ToDoToday.png";
+    }
+    else {
+        todoImg.src = "./images/ToDo_Today.png";
+    }
+
+    const seanImg = document.getElementById('seanImg');
+    if (seanImg.src.match("./images/Sean_vs_Ai.png")) {
+        seanImg.src = "./images/Dark_Sean.png";
+    }
+    else {
+        seanImg.src = "./images/Sean_vs_Ai.png.png";
+    }
 
     // Contact Page Images
     const profileImg = document.getElementById('profileImage');
@@ -44,5 +67,4 @@ function toggleImages() {
     else {
         profileImg.src = ".images/Profile_Image.png";
     }
-
 }
