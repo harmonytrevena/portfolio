@@ -25,16 +25,12 @@
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
-            <div class="navbar-brand">
+            <div class="navbar-brand" style="justify-content: space-between;">
               <a class="navbar-item">
                 <img src="images/Blue_Portfolio_Logo.png" alt="Logo">
               </a>
-            </div>
-            <!-- Dark Light Mode Feature -->
-            <div class="navbar-menu">
-              <div class="navbar-end">
-                <button class="btn-toggle button is-link" style="margin-top: 5px;" onClick="toggleImages()">Dark Mode</button>
-              </div>
+              <!-- Dark Light Mode Feature -->
+              <button class="btn-toggle button is-link" style="margin: 5px 15px;" onClick="toggleImages(); changeSource()">Dark Mode</button>
             </div>
           </div>
         </nav>
@@ -399,11 +395,11 @@
           <br>
           <div class="columns">
             <div class="column">
-              <video playsinline autoplay muted loop class="is-hidden-mobile">
-                <source id="featureVideo" src="video/Featured_Project_Graphic.mp4" type="video/mp4">
+              <video playsinline autoplay muted loop class="is-hidden-mobile" id="featureVideo">
+                  <source id="sourceVideo" src="video/Featured_Project_Graphic.mp4" type="video/mp4">
               </video>
               <figure class="is-hidden-desktop is-hidden-tablet">
-                <img src="images/Featured_Project_Graphic.png" alt="Image of Taskwork app on desktop screen">
+                <img id="featureImage" src="images/Featured_Project_Graphic.png" alt="Image of Taskwork app on desktop screen">
               </figure>
             </div>
             <div class="column">
@@ -907,7 +903,7 @@
               </div>
             </div>
             <div class="column">
-              <img class="contact-img" src="images/Profile_Image.png" alt="Image of Harmony"/>
+              <img id="profileImage" class="contact-img" src="images/Profile_Image.png" alt="Image of Harmony"/>
             </div>
         </div>
       </div>
@@ -934,6 +930,7 @@
     <script src="scripts/tabToggle.js"></script>
     <script src="scripts/lightDarkMode.js"></script>
     <script src="scripts/toggleImages.js"></script>
+    <script src="scripts/changeSource.js"></script>
     <script src="https://kit.fontawesome.com/38a39c8573.js" crossorigin="anonymous"></script>
 
   </body>

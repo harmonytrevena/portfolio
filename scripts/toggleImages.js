@@ -26,14 +26,23 @@ function toggleImages() {
         contact.src = "./images/Contact_Graphic.png";
     }
 
-    const feature = document.getElementById('featureVideo');
-    if (feature.src.match("./video/Featured_Project_Graphic.mp4")) {
-        feature.src = "./video/Dark_Featured_Project_Graphic.mp4";
+    const featureImg = document.getElementById('featureImage');
+    if (featureImg.src.match("./images/Featured_Project_Graphic.png")) {
+        featureImg.src = "./images/Dark_Featured_Project_Graphic.png";
     }
     else {
-        feature.src = "./video/Featured_Project_Graphic.mp4";
+        featureImg.src = "./images/Featured_Project_Graphic.png";
     }
 
     // Portfolio Page Images
+
     // Contact Page Images
+    const profileImg = document.getElementById('profileImage');
+    if (profileImg.src.match("./images/Profile_Image.png")) {
+        profileImg.src = "./images/Dark_Profile_Image.png";
+    }
+    else {
+        profileImg.src = ".images/Profile_Image.png";
+    }
+
 }
