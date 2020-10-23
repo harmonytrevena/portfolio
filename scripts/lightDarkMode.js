@@ -1,22 +1,12 @@
 'use strict';
 
-// Add description here
-const clickModeButtonLight = document.querySelector('#modeButtonLight');
-const clickModeButtonDark = document.querySelector('#modeButtonLight');
+const btn = document.querySelector('.btn-toggle');
 
-clickModeButtonLight.addEventListener('click', function (event) {
-  event.preventDefault();
-
-  inputs.forEach((input, index) => {
-    placeholders[index].innerHTML = input.value;
-  })
+// Listen for a click on the button
+btn.addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');  
 });
 
-clickModeButtonDark.addEventListener('click', function (event) {
-    event.preventDefault();
-  
-    inputs.forEach((input, index) => {
-      placeholders[index].innerHTML = input.value;
-    })
-  });
-
+document.addEventListener('DOMContentLoaded', (event) => {
+  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+})

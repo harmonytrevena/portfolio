@@ -28,12 +28,13 @@ html {
 
 body {
   color: #000000;
+  background-color: #ffffff;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
 }
 
-/* Alphabetical Order From Here Down */
+/* Alphabetical order from here down - Light Mode (Default) */
 
 
 .align-center {
@@ -45,12 +46,6 @@ body {
   text-transform: uppercase;
   transition: opacity 1s ease;
   opacity: 0.8;
-}
-
-.a-menu:hover {
-  opacity: 1;
-  color: #1E4132 !important;
-  text-decoration: none;
 }
 
 .box {
@@ -316,4 +311,238 @@ padding: 0rem 1.5rem 0rem 1.5rem;
 
 .title:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+/* Alphabetical order from here down - Light Mode (Default) */
+
+body.dark-theme {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.dark-theme .box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #051116;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #ffffff;
+}
+
+.dark-theme #footer a {
+  color: #223f97 !important;
+}
+
+.dark-theme .has-text-blue {
+  color: #223f97 !important;
+}
+
+.dark-theme .hero.is-info {
+  background-color: #0A212B;
+  color: #fff;
+}
+
+.dark-theme .hero.is-info .tabs.is-boxed a:hover, .dark-theme .hero.is-info .tabs.is-toggle a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-theme .hero.is-info .tabs.is-boxed li.is-active a, .dark-theme .hero.is-info .tabs.is-boxed li.is-active a:hover, .dark-theme .hero.is-info .tabs.is-toggle li.is-active a, .dark-theme .hero.is-info .tabs.is-toggle li.is-active a:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: #223f97;
+}
+
+.dark-theme .hero.is-info a.navbar-item:hover, .dark-theme .hero.is-info a.navbar-item.is-active, .dark-theme .hero.is-info .navbar-link:hover, .dark-theme .hero.is-info .navbar-link.is-active {
+  background-color: #0A212B;
+}
+
+.dark-theme .input, .dark-theme .textarea, .dark-theme .select select {
+  background-color: #000000;
+  border-color: #000000;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.dark-theme .textarea::placeholder {
+  color: #ffffff;
+}
+
+.dark-theme .label {
+  color: #ffffff;
+}
+
+.dark-theme .has-pink-bg {
+  background-color: #0A212B;
+}
+
+.dark-theme .has-white-pink-gradient {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#0A212B", GradientType=1);
+}
+
+@media(max-width: 1024px) {
+  .dark-theme .has-white-pink-gradient {
+      background: rgb(0, 0, 0);
+      background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#0A212B", GradientType=1);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .dark-theme .hero.is-info .navbar-menu {
+    background-color: #0A212B;
+  }
+}
+
+.dark-theme .subtitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.dark-theme .subtitle strong {
+  color:#ffffff;
+  font-weight: 600;
+}
+
+.dark-theme strong {
+  color: #ffffff;
+}
+
+.dark-theme .title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.dark-theme .title strong {
+  color: #223f97;
+}
+
+/* Handles Browser Forced Dark Mode */
+@media (prefers-color-scheme: dark) {
+  
+  body.dark-theme {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  
+  .dark-theme .box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #051116;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: #ffffff;
+  }
+  
+  .dark-theme #footer a {
+    color: #223f97 !important;
+  }
+  
+  .dark-theme .has-text-blue {
+    color: #223f97 !important;
+  }
+  
+  .dark-theme .hero.is-info {
+    background-color: #0A212B;
+    color: #fff;
+  }
+  
+  .dark-theme .hero.is-info .tabs.is-boxed a:hover, .dark-theme .hero.is-info .tabs.is-toggle a:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .dark-theme .hero.is-info .tabs.is-boxed li.is-active a, .dark-theme .hero.is-info .tabs.is-boxed li.is-active a:hover, .dark-theme .hero.is-info .tabs.is-toggle li.is-active a, .dark-theme .hero.is-info .tabs.is-toggle li.is-active a:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #223f97;
+  }
+  
+  .dark-theme .hero.is-info a.navbar-item:hover, .dark-theme .hero.is-info a.navbar-item.is-active, .dark-theme .hero.is-info .navbar-link:hover, .dark-theme .hero.is-info .navbar-link.is-active {
+    background-color: #0A212B;
+  }
+  
+  .dark-theme .input, .dark-theme .textarea, .dark-theme .select select {
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .dark-theme .textarea::placeholder {
+    color: #ffffff;
+  }
+  
+  .dark-theme .label {
+    color: #ffffff;
+  }
+  
+  .dark-theme .has-pink-bg {
+    background-color: #0A212B;
+  }
+  
+  .dark-theme .has-white-pink-gradient {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(10,33,43, 1) 50%, rgba(10,33,43, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#0A212B", GradientType=1);
+  }
+  
+  @media(max-width: 1024px) {
+    .dark-theme .has-white-pink-gradient {
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(10,33,43, 1) 25%, rgba(10,33,43, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#0A212B", GradientType=1);
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .dark-theme .hero.is-info .navbar-menu {
+      background-color: #0A212B;
+    }
+  }
+  
+  .dark-theme .subtitle {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  
+  .dark-theme .subtitle strong {
+    color:#ffffff;
+    font-weight: 600;
+  }
+  
+  .dark-theme strong {
+    color: #ffffff;
+  }
+  
+  .dark-theme .title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  
+  .dark-theme .title strong {
+    color: #223f97;
+  }
 }

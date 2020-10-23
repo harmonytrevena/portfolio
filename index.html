@@ -19,15 +19,7 @@
   
   </head>
   
-  <body>
-    <!-- <section class="section browsermode"> 
-      <div class="container">
-        <div class="buttons has-addons is-centered">
-          <button class="button is-active mode" id="modeButtonLight">Light Mode</button>
-          <button class="button mode" id="modeButtonDark">Dark Mode</button>
-        </div>
-      </div>
-    </section> -->
+  <body class="dark-theme || light-theme">
 
     <section class="hero is-info is-large">
       <div class="hero-head">
@@ -38,23 +30,26 @@
                 <img src="images/Blue_Portfolio_Logo.png" alt="Logo">
               </a>
             </div>
+            <!-- Dark Light Mode Feature -->
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <button class="btn-toggle button is-link" style="margin-top: 5px;">Dark Mode</button>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
 
       <!-- Hero -->
       <div class="hero-body">
-        <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items">
+        <picture>
+          <source 
+            srcset="images/Dark_Hero_Body.png"
+            media="(prefers-color-scheme: dark)">
+            <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items">
+        </picture>
+        <!-- <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items"> -->
       </div>
-
-      <!-- Dark Light Mode Feature (not built) -->
-      <!-- <div class="container">
-        <div class="field padding-add">
-          <label for="switchRoundedDefault">Dark</label>
-          <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
-          <label for="switchRoundedDefault">Light</label>
-        </div>
-      </div> -->
       
       <!-- Hero Footer -->
       <div class="hero-foot">
@@ -943,6 +938,7 @@
     
     <!-- Scripts -->
     <script src="scripts/tabToggle.js"></script>
+    <script src="scripts/lightDarkMode.js"></script>
     <script src="https://kit.fontawesome.com/38a39c8573.js" crossorigin="anonymous"></script>
 
   </body>
