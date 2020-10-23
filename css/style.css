@@ -430,7 +430,7 @@ body.dark-theme {
 }
 
 /* Handles Browser Forced Dark Mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   
   body.dark-theme {
     color: #ffffff;
@@ -545,4 +545,4 @@ body.dark-theme {
   .dark-theme .title strong {
     color: #223f97;
   }
-}
+} */

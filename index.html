@@ -19,7 +19,7 @@
   
   </head>
   
-  <body class="dark-theme || light-theme">
+  <body class="light-theme">
 
     <section class="hero is-info is-large">
       <div class="hero-head">
@@ -33,7 +33,7 @@
             <!-- Dark Light Mode Feature -->
             <div class="navbar-menu">
               <div class="navbar-end">
-                <button class="btn-toggle button is-link" style="margin-top: 5px;">Dark Mode</button>
+                <button class="btn-toggle button is-link" style="margin-top: 5px;" onClick="toggleImages()">Dark Mode</button>
               </div>
             </div>
           </div>
@@ -42,13 +42,7 @@
 
       <!-- Hero -->
       <div class="hero-body">
-        <picture>
-          <source 
-            srcset="images/Dark_Hero_Body.png"
-            media="(prefers-color-scheme: dark)">
-            <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items">
-        </picture>
-        <!-- <img src="images/Hero_Body.png" alt="Graphic Image of Assorted Office Items"> -->
+        <img src="images/Hero_Body.png" id="heroImage""/>
       </div>
       
       <!-- Hero Footer -->
@@ -287,7 +281,7 @@
         <div class="container">
           <div class="columns">
             <div class="column">
-                <img class="contact-img" src="images/Experience_Graphic_Light.png" alt="Desktop, Mouse and Office Space Graphic"/>
+                <img id="experienceGraphic" class="contact-img" src="images/Experience_Graphic_Light.png" alt="Desktop, Mouse and Office Space Graphic"/>
             </div>
             <div class="column">
               <h2 class="title">
@@ -393,7 +387,7 @@
                 </h2>
               </div>
               <div class="column">
-                  <img class="contact-img" src="images/Contact_Graphic.png" alt="Coffee, Tavel and Collaboration Graphic"/>
+                  <img id="contactGraphic" class="contact-img" src="images/Contact_Graphic.png" alt="Coffee, Tavel and Collaboration Graphic"/>
               </div>
             </div>
           </div>
@@ -406,7 +400,7 @@
           <div class="columns">
             <div class="column">
               <video playsinline autoplay muted loop class="is-hidden-mobile">
-                <source src="video/Featured_Project_Graphic.mp4" type="video/mp4">
+                <source id="featureVideo" src="video/Featured_Project_Graphic.mp4" type="video/mp4">
               </video>
               <figure class="is-hidden-desktop is-hidden-tablet">
                 <img src="images/Featured_Project_Graphic.png" alt="Image of Taskwork app on desktop screen">
@@ -939,6 +933,7 @@
     <!-- Scripts -->
     <script src="scripts/tabToggle.js"></script>
     <script src="scripts/lightDarkMode.js"></script>
+    <script src="scripts/toggleImages.js"></script>
     <script src="https://kit.fontawesome.com/38a39c8573.js" crossorigin="anonymous"></script>
 
   </body>
