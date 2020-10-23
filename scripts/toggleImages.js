@@ -83,12 +83,4 @@ function toggleImages() {
         seanGraphic.src = "./images/SeanvsAI_Graphic.png";
     }
 
-    // Contact Page Images
-    const profileImg = document.getElementById('profileImage');
-    if (profileImg.src.match("./images/Profile_Image.png")) {
-        profileImg.src = "./images/Dark_Profile_Image.png";
-    }
-    else {
-        profileImg.src = ".images/Profile_Image.png";
-    }
 }
